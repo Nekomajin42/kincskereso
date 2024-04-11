@@ -2,4 +2,6 @@ A *Vezetőtanítők és -tanárok XV. országos módszertani konferenciáján* t
 
 2024-04
 
+Keretrendszer: [impress.js](https://impress.js.org/)
+
 Grafika: [OpenMoji](https://openmoji.org/)
