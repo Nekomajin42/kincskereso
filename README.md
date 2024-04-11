@@ -1,6 +1,6 @@
 A *Vezetőtanítők és -tanárok XV. országos módszertani konferenciáján* tartott előadásom prezentációja.
 
-2024. 04. 13.
+2024-04-13
 
 ---
 
