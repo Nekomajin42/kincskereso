@@ -1,0 +1,178 @@
+:root {
+	--color-green: rgb(0, 71, 53);
+	--color-orange: rgb(255, 171, 13);
+	--color-white: rgb(255, 255, 255);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	color: var(--color-white);
+	background: var(--color-green);
+}
+
+.step {
+	display: flex;
+	align-items: center;
+	width: 90vw;
+	height: 90vh;
+	aspect-ratio: 16 / 9;
+	margin: 0;
+	padding: 0;
+}
+
+.step-h {
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.step-v {
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.step>* {
+	flex: 1;
+	margin: 0;
+	padding: 0;
+}
+
+#overview {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: 150%;
+}
+
+h2 {
+	flex: none;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 100%;
+	height: 16rem;
+	font-size: 8rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: 120%;
+}
+
+ol, ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 4rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: 150%;
+}
+
+.list-h {
+	flex-flow: row wrap;
+	align-items: center;
+	width: 80%;
+	height: 80%;
+}
+
+.list-h li {
+	list-style-type: none;
+	width: calc(100% / 3 - 128px);
+	margin: 64px;
+	padding: 32px;
+	background: var(--color-white);
+	border-radius: 50%;
+}
+
+.list-v {
+	flex: auto;
+	flex-flow: column nowrap;
+	align-items: start;
+	width: 80%;
+}
+
+.list-v li {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: start;
+}
+
+.list-v li::before {
+	position: absolute;
+	left: -8rem;
+	display: block;
+	width: 6rem;
+	height: 6rem;
+}
+
+.li-age::before {
+	content: url(img/icon_age.svg);
+}
+
+.li-route::before {
+	content: url(img/icon_map.svg);
+}
+
+.li-task::before {
+	content: url(img/icon_task.svg);
+}
+
+.list-c {
+	flex: auto;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 80%;
+	font-size: 6rem;
+	line-height: 200%;
+}
+
+.list-c li {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+iframe {
+	width: 90vw;
+	height: 90vh;
+	border: none;
+	border-radius: 16px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-orange);
+}
+
+.img-large {
+	width: calc(100vw - 32px);
+	background: var(--color-white);
+	border-radius: 16px;
+}
